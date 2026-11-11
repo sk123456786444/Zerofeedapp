@@ -1,0 +1,6 @@
+{
+  "name": "ZeroFeed TikTok - Short Video Platform",
+  "description": "TikTok jaisi short video app with auto-scroll, comments, likes, profiles, upload, sounds aur JazzDrive feed support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
