@@ -16,12 +16,9 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install PWABuilder CLI
-        run: npm install -g @pwabuilder/cli
-
-      - name: Generate Package
+      - name: Generate Package via PWABuilder
         run: |
-          pwa-builder generate --manifest ./public/manifest.json --name "ZeroFeed" --platform android --output ./apk-output
+          npx @pwabuilder/cli generate --manifest ./public/manifest.json --name "ZeroFeed" --platform android --output ./apk-output
         continue-on-error: true
 
       - name: Upload Artifact
